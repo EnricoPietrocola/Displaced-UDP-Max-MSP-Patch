@@ -8,6 +8,10 @@ Requirements:
 * [Open Sound Control](https://cnmat.berkeley.edu/downloads)
 * [ZeroTier One](https://www.zerotier.com/)
 
+Keep in mind:
+Zerotier helps computer connect over the internet avoinding port forwarding (does even more than that).
+That aside, users should make sure firewalls on their devices are properly allowing incoming data from the chosen port or application. In this particular case this would mean to make sure to allow Max to have incoming connections or allow UDP port 12777.
+
 Copyright (c) 2020 Enrico Pietrocola
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
