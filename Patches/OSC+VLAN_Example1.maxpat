@@ -45,7 +45,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 390.25, 620.0, 237.0, 33.0 ],
-					"text" : "Data is actaully being sent to the first 12 addresses in the ZeroTier One network."
+					"text" : "Data is being sent to the first 12 addresses in the ZeroTier One network."
 				}
 
 			}
