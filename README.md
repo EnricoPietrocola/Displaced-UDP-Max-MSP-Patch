@@ -8,7 +8,7 @@ Requirements:
 * [Open Sound Control](https://cnmat.berkeley.edu/downloads)
 * [ZeroTier One](https://www.zerotier.com/)
 
-Copyright (c) <2020> <Enrico Pietrocola>
+Copyright (c) 2020 Enrico Pietrocola
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
