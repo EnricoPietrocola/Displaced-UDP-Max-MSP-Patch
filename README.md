@@ -1,6 +1,7 @@
 # Displaced-UDP-MacroGranular-Synth-
 This MaxMSP patch is an example of creating a dynamic Synth working remotely thanks to OSC and UDP sockets, empowering electronic musicians to interact remotely on Max (with the use of ZeroTier One)
 
+The entire repo is a space in which I am going to store the steps of my research and tests in this subject
 
 THIS README IS WIP
 
