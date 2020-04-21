@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 85.0, 1479.0, 929.0 ],
+		"rect" : [ 34.0, 85.0, 1479.0, 913.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,18 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-109",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 275.621216058731079, 213.0, 354.0, 48.0 ],
+					"text" : "Based on which instance of the synth you are to use, you should enable all other gates and leave the one corresponding to yours disabled"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-106",
 					"maxclass" : "newobj",
@@ -364,7 +376,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 254.621216058731079, 209.833328723907471, 396.0, 48.0 ],
+					"patching_rect" : [ 275.621216058731079, 155.833328723907471, 396.0, 48.0 ],
 					"text" : "This gate system is a basic \"filter/firewall\" example. Enabling a gate enables remote control from a user. This is needed in order to avoid network feedback in case of network loops."
 				}
 
