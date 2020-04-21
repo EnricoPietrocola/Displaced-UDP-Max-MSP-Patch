@@ -6,7 +6,7 @@ The entire repo is a space in which I am going to store the steps of my research
 THIS README IS WIP
 
 Requirements: 
-* [Open Sound Control](https://cnmat.berkeley.edu/downloads)
+* [Open Sound Control](https://cnmat.berkeley.edu/downloads) (AKA you need the CNMAT externals package from Max's Package Manager) 
 * [ZeroTier One](https://www.zerotier.com/)
 
 Keep in mind:
