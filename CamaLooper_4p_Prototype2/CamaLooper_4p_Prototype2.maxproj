@@ -2,8 +2,8 @@
 	"name" : "CamaLooper_4p_Prototype2",
 	"version" : 1,
 	"creationdate" : 3670325777,
-	"modificationdate" : 3670325777,
-	"viewrect" : [ 0.0, 0.0, 300.0, 500.0 ],
+	"modificationdate" : 3670415256,
+	"viewrect" : [ 25.0, 107.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -14,6 +14,18 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"toplevel" : 1
+			}
+
+		}
+,
+		"media" : 		{
+			"GiganteStereo2.wav" : 			{
+				"kind" : "audiofile",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Desktop/Gigante record"
+				}
+
 			}
 
 		}

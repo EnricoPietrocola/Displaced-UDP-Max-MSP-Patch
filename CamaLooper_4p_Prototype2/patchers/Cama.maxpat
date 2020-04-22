@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1878.0, 85.0, 1482.0, 929.0 ],
+		"rect" : [ -1886.0, 77.0, 1852.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -756,7 +756,7 @@
 					"patching_rect" : [ 1332.700927500000034, 1037.0, 597.886474500000077, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 9.700927500000034, 166.0, 708.0, 18.0 ],
-					"size" : 61059.0
+					"size" : 25581.065759637189331
 				}
 
 			}
@@ -773,7 +773,7 @@
 					"patching_rect" : [ 1260.700927500000034, 1001.608948000000055, 597.886474500000077, 19.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 9.700927500000034, 85.608948000000055, 708.0, 19.0 ],
-					"size" : 61059.0
+					"size" : 25581.065759637189331
 				}
 
 			}
@@ -792,13 +792,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-134",
-					"linecount" : 6,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1863.0, 700.10638427734375, 55.0, 91.0 ],
-					"text" : "replace C:/Users/Enrico/Desktop/paper.wav"
+					"patching_rect" : [ 1863.0, 700.10638427734375, 251.0, 22.0 ],
+					"text" : "replace \"Gigante record/GiganteStereo2.wav\""
 				}
 
 			}
@@ -2811,7 +2810,7 @@
 			}
 , 			{
 				"box" : 				{
-					"addpoints" : [ 0.0, 0.0, 0, 134.145745173770791, 0.81665772, 0, 436.541455571044708, 0.229991053333333, 0, 516.119274096643153, 0.909991053333333, 0, 627.528220032480817, 0.723324386666667, 0, 627.528220032480817, 0.81665772, 0, 850.346111904156487, 0.043324386666667, 0, 1041.33287636559271, 0.77665772, 0, 1216.40407712190904, 0.909991053333333, 0, 1662.039860865260152, 0.629991053333333, 0 ],
+					"addpoints" : [ 0.0, 1.0, 0 ],
 					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"domain" : 2992.1259765625,
 					"gridcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -2869,7 +2868,7 @@
 					"patching_rect" : [ 1178.587402000000111, 1092.704101999999921, 596.0, 41.594054999999997 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 13.700927500000034, 115.40594482421875, 703.0, 41.59405517578125 ],
-					"size" : 61059.0
+					"size" : 25581.065759637189331
 				}
 
 			}
@@ -3230,7 +3229,7 @@
 						"loopend" : [ 2.0, "ms" ],
 						"loopstart" : [ 0.0, "ms" ],
 						"mode" : "efficient",
-						"originallength" : [ 6048.320180253982471, "ticks" ],
+						"originallength" : [ 2533.982938612933594, "ticks" ],
 						"originaltempo" : 12.382122209666059,
 						"phase" : [ 0.0, "ticks" ],
 						"pitchcorrection" : 0,
@@ -5147,30 +5146,30 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-54" : [ "live.text[6]", "live.text", 0 ],
-			"obj-155" : [ "live.drop", "live.drop", 0 ],
 			"obj-79" : [ "envLenght[1]", "TrigMetro", 0 ],
-			"obj-102" : [ "speed", "speed", 0 ],
 			"obj-130" : [ "envLenght", "envLenght", 0 ],
-			"obj-147" : [ "live.text[15]", "live.text[1]", 0 ],
-			"obj-136" : [ "live.text[4]", "live.text[1]", 0 ],
-			"obj-125" : [ "live.tab", "live.tab", 0 ],
-			"obj-83" : [ "timestr", "timestr", 0 ],
-			"obj-14" : [ "live.numbox", "live.numbox", 0 ],
-			"obj-123" : [ "live.text[11]", "live.text", 0 ],
-			"obj-122" : [ "live.text[8]", "live.text", 0 ],
-			"obj-131" : [ "grainL", "grainL", 0 ],
-			"obj-13" : [ "live.text[13]", "live.text", 0 ],
 			"obj-116" : [ "pitch", "pitch", 0 ],
-			"obj-31" : [ "live.gain~[3]", "live.gain~", 0 ],
-			"obj-143" : [ "live.text[10]", "live.text[1]", 0 ],
-			"obj-149" : [ "live.text[12]", "live.text[1]", 0 ],
-			"obj-124" : [ "live.text[17]", "live.text", 0 ],
-			"obj-41" : [ "live.text[14]", "live.text[1]", 0 ],
-			"obj-133" : [ "click", "click", 0 ],
+			"obj-14" : [ "live.numbox", "live.numbox", 0 ],
 			"obj-159" : [ "Out[2]", "volume", 0 ],
+			"obj-83" : [ "timestr", "timestr", 0 ],
+			"obj-123" : [ "live.text[11]", "live.text", 0 ],
+			"obj-13" : [ "live.text[13]", "live.text", 0 ],
+			"obj-131" : [ "grainL", "grainL", 0 ],
+			"obj-122" : [ "live.text[8]", "live.text", 0 ],
+			"obj-54" : [ "live.text[6]", "live.text", 0 ],
+			"obj-41" : [ "live.text[14]", "live.text[1]", 0 ],
+			"obj-124" : [ "live.text[17]", "live.text", 0 ],
+			"obj-149" : [ "live.text[12]", "live.text[1]", 0 ],
+			"obj-155" : [ "live.drop", "live.drop", 0 ],
+			"obj-31" : [ "live.gain~[3]", "live.gain~", 0 ],
+			"obj-147" : [ "live.text[15]", "live.text[1]", 0 ],
+			"obj-143" : [ "live.text[10]", "live.text[1]", 0 ],
 			"obj-153" : [ "live.text[16]", "live.text[1]", 0 ],
+			"obj-133" : [ "click", "click", 0 ],
 			"obj-148" : [ "live.text[7]", "live.text[1]", 0 ],
+			"obj-102" : [ "speed", "speed", 0 ],
+			"obj-125" : [ "live.tab", "live.tab", 0 ],
+			"obj-136" : [ "live.text[4]", "live.text[1]", 0 ],
 			"parameterbanks" : 			{
 
 			}

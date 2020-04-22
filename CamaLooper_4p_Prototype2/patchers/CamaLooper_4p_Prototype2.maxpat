@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 85.0, 1482.0, 913.0 ],
+		"rect" : [ 26.0, 85.0, 1852.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -63,13 +63,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-150",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1156.383100032806396, 1874.468281745910645, 50.0, 50.0 ],
-					"text" : "/userID/rStart 1"
+					"patching_rect" : [ 1156.383100032806396, 1874.468281745910645, 50.0, 36.0 ],
+					"text" : "/user4/pitch 0"
 				}
 
 			}
@@ -681,6 +681,8 @@
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 336.203469276428223, 2100.358492612838745, 48.0, 136.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1364.203469276428223, 700.718620777130127, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_shortname" : "live.gain~[4]",
@@ -714,6 +716,8 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 336.203469276428223, 1968.718620777130127, 332.0, 116.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1021.203469276428223, 710.718620777130127, 332.0, 116.0 ],
 					"varname" : "bp.Gigaverb",
 					"viewvisibility" : 1
 				}
@@ -887,6 +891,8 @@
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 221.028492569923401, 2310.033815145492554, 48.0, 136.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1004.028492569923401, 904.341659784317017, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_shortname" : "live.gain~[4]",
@@ -1743,9 +1749,9 @@
 			"obj-28::obj-136" : [ "live.text[36]", "live.text[1]", 0 ],
 			"obj-23::obj-159" : [ "Out[5]", "volume", 0 ],
 			"obj-39::obj-123" : [ "live.text[43]", "live.text", 0 ],
+			"obj-1::obj-116" : [ "pitch", "pitch", 0 ],
 			"obj-1::obj-130" : [ "envLenght", "envLenght", 0 ],
 			"obj-1::obj-79" : [ "envLenght[1]", "TrigMetro", 0 ],
-			"obj-1::obj-116" : [ "pitch", "pitch", 0 ],
 			"obj-28::obj-54" : [ "live.text[35]", "live.text", 0 ],
 			"obj-23::obj-54" : [ "live.text[21]", "live.text", 0 ],
 			"obj-39::obj-122" : [ "live.text[47]", "live.text", 0 ],
@@ -2152,8 +2158,7 @@
 			}
 , 			{
 				"name" : "bp.Gigaverb.maxpat",
-				"bootpath" : "D:/ForkSourceFolder/Repo-Displaced-UDP-MacroGranular-Synth/CamaLooper_4p_Prototype2/patchers",
-				"patcherrelativepath" : ".",
+				"bootpath" : "C74:/packages/Beap/clippings/BEAP/Effects",
 				"type" : "JSON",
 				"implicit" : 1
 			}
