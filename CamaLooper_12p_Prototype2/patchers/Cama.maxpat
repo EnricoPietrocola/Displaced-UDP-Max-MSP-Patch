@@ -39,6 +39,90 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-185",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1692.0, 936.29937700000005, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-181",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 47.468246000000022, 85.0, 419.0, 62.0 ],
+					"text" : "Not only OSC, pretty much any aspect of this patch can be remade. This sampler was created when I first started patching on Max, some rookie mistakes are still there. Might you want to contribute, feel free to go to https://github.com/EnricoPietrocola/Displaced-UDP-MacroGranular-Synth-"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-178",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "bang", "bang", "float" ],
+					"patching_rect" : [ 1654.6666259765625, 870.751648000000046, 40.0, 22.0 ],
+					"text" : "t b b f"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-173",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1648.6666259765625, 932.29937700000005, 29.5, 22.0 ],
+					"text" : "0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-170",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 820.0, 841.0, 70.0, 22.0 ],
+					"text" : "loadmess 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-169",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1020.0, 895.0, 70.0, 22.0 ],
+					"text" : "loadmess 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-168",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 820.0, 526.460327000000007, 119.0, 22.0 ],
+					"text" : "OSC-route /allSpeed"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-172",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -605,7 +689,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-17",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -617,7 +701,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-9",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -630,7 +714,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-6",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -642,7 +726,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-5",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -792,12 +876,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-134",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1863.0, 700.10638427734375, 251.0, 22.0 ],
-					"text" : "replace \"Gigante record/GiganteStereo2.wav\""
+					"patching_rect" : [ 1863.0, 700.10638427734375, 251.0, 36.0 ],
+					"text" : "replace \"C:/Users/Enrico/Desktop/Gigante record/GiganteStereo3.wav\""
 				}
 
 			}
@@ -852,7 +937,7 @@
 					"presentation_rect" : [ 755.359405517578125, 135.796996824218695, 44.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "envLenght[2]",
+							"parameter_longname" : "envLenght[1]",
 							"parameter_mmax" : 20000.0,
 							"parameter_shortname" : "TrigMetro",
 							"parameter_type" : 0,
@@ -1414,7 +1499,7 @@
 					"patching_rect" : [ 534.080199999999991, 1170.587402000000111, 44.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "click[3]",
+							"parameter_longname" : "click",
 							"parameter_mmax" : 100.0,
 							"parameter_shortname" : "click",
 							"parameter_type" : 0,
@@ -1441,7 +1526,7 @@
 					"presentation_rect" : [ 190.0, 10.0, 44.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "grainL[1]",
+							"parameter_longname" : "grainL",
 							"parameter_mmax" : 20000.0,
 							"parameter_shortname" : "grainL",
 							"parameter_type" : 0,
@@ -1466,7 +1551,7 @@
 					"patching_rect" : [ 601.571411000000012, 721.106384000000048, 44.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "envLenght[3]",
+							"parameter_longname" : "envLenght",
 							"parameter_mmax" : 20000.0,
 							"parameter_shortname" : "envLenght",
 							"parameter_type" : 0,
@@ -1607,7 +1692,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_mmin" : -20.0,
-							"parameter_longname" : "pitch[1]",
+							"parameter_longname" : "pitch",
 							"parameter_mmax" : 0.0,
 							"parameter_shortname" : "pitch",
 							"parameter_type" : 0,
@@ -1635,7 +1720,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_mmin" : -10.0,
-							"parameter_longname" : "speed[1]",
+							"parameter_longname" : "speed",
 							"parameter_mmax" : 10.0,
 							"parameter_shortname" : "speed",
 							"parameter_type" : 0,
@@ -3229,12 +3314,10 @@
 						"loopend" : [ 2.0, "ms" ],
 						"loopstart" : [ 0.0, "ms" ],
 						"mode" : "efficient",
-						"originallength" : [ 2533.982938612933594, "ticks" ],
-						"originaltempo" : 12.382122209666059,
+						"originallength" : [ 2533.982938612934049, "ticks" ],
+						"originaltempo" : 12.382122209666061,
 						"phase" : [ 0.0, "ticks" ],
 						"pitchcorrection" : 0,
-						"pitchshift" : [ 0.529731547179648 ],
-						"pitchshiftcent" : [ -1100 ],
 						"quality" : "basic",
 						"timestretch" : [ 1 ]
 					}
@@ -4009,8 +4092,64 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"source" : [ "obj-168", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-102", 0 ],
+					"source" : [ "obj-169", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-116", 0 ],
+					"source" : [ "obj-170", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-140", 0 ],
+					"source" : [ "obj-173", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-140", 0 ],
+					"source" : [ "obj-178", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-173", 0 ],
+					"source" : [ "obj-178", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-185", 0 ],
+					"source" : [ "obj-178", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
 					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-141", 0 ],
+					"source" : [ "obj-185", 0 ]
 				}
 
 			}
@@ -4479,6 +4618,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-178", 0 ],
+					"order" : 1,
+					"source" : [ "obj-53", 6 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-209", 0 ],
 					"source" : [ "obj-53", 8 ]
 				}
@@ -4487,7 +4634,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-57", 1 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-53", 6 ]
 				}
 
@@ -4856,6 +5003,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-168", 0 ],
+					"order" : 12,
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-29", 0 ],
 					"order" : 10,
 					"source" : [ "obj-9", 0 ]
@@ -4873,7 +5028,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-34", 0 ],
-					"order" : 22,
+					"order" : 23,
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -4881,7 +5036,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-37", 0 ],
-					"order" : 21,
+					"order" : 22,
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -4889,7 +5044,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-42", 0 ],
-					"order" : 20,
+					"order" : 21,
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -4897,7 +5052,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
-					"order" : 19,
+					"order" : 20,
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -4905,7 +5060,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-44", 0 ],
-					"order" : 18,
+					"order" : 19,
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -4913,7 +5068,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-45", 0 ],
-					"order" : 17,
+					"order" : 18,
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -4921,7 +5076,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-46", 0 ],
-					"order" : 16,
+					"order" : 17,
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -4929,7 +5084,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-49", 0 ],
-					"order" : 15,
+					"order" : 16,
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -4937,7 +5092,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-50", 0 ],
-					"order" : 14,
+					"order" : 15,
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -4945,7 +5100,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-52", 0 ],
-					"order" : 13,
+					"order" : 14,
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -4961,7 +5116,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-65", 0 ],
-					"order" : 12,
+					"order" : 13,
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -5145,6 +5300,43 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-31" : [ "live.gain~[5]", "live.gain~", 0 ],
+			"obj-83" : [ "timestr[2]", "timestr", 0 ],
+			"obj-136" : [ "live.text[29]", "live.text[1]", 0 ],
+			"obj-116" : [ "pitch", "pitch", 0 ],
+			"obj-41" : [ "live.text[18]", "live.text[1]", 0 ],
+			"obj-147" : [ "live.text[26]", "live.text[1]", 0 ],
+			"obj-159" : [ "Out[5]", "volume", 0 ],
+			"obj-14" : [ "live.numbox[1]", "live.numbox", 0 ],
+			"obj-155" : [ "live.drop[1]", "live.drop", 0 ],
+			"obj-130" : [ "envLenght", "envLenght", 0 ],
+			"obj-54" : [ "live.text[21]", "live.text", 0 ],
+			"obj-79" : [ "envLenght[1]", "TrigMetro", 0 ],
+			"obj-148" : [ "live.text[20]", "live.text[1]", 0 ],
+			"obj-124" : [ "live.text[28]", "live.text", 0 ],
+			"obj-125" : [ "live.tab[1]", "live.tab", 0 ],
+			"obj-143" : [ "live.text[22]", "live.text[1]", 0 ],
+			"obj-13" : [ "live.text[19]", "live.text", 0 ],
+			"obj-123" : [ "live.text[25]", "live.text", 0 ],
+			"obj-131" : [ "grainL", "grainL", 0 ],
+			"obj-133" : [ "click", "click", 0 ],
+			"obj-102" : [ "speed", "speed", 0 ],
+			"obj-149" : [ "live.text[27]", "live.text[1]", 0 ],
+			"obj-153" : [ "live.text[24]", "live.text[1]", 0 ],
+			"obj-122" : [ "live.text[23]", "live.text", 0 ],
+			"parameterbanks" : 			{
+
+			}
+
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "OSC-route.mxe64",
+				"type" : "mx64"
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
