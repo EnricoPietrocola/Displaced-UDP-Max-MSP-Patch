@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 1852.0, 929.0 ],
+		"rect" : [ 34.0, 77.0, 1482.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,12 +39,24 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-55",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 742.916664600372314, 1997.564055681228638, 77.0, 22.0 ],
+					"text" : "loadmess 36"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-54",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 749.0, 2669.0, 81.0, 22.0 ],
+					"patching_rect" : [ 587.666664600372314, 2815.0, 81.0, 22.0 ],
 					"text" : "loadmess -18"
 				}
 
@@ -5713,12 +5725,12 @@
 						"Time[1]" : [ 11.0 ],
 						"bypass" : [ 0.0 ],
 						"live.dial" : [ 1.11811023622047 ],
-						"live.gain~" : [ 0.0 ],
-						"live.gain~[1]" : [ -18.0 ]
+						"live.gain~" : [ -9.140782291891703 ],
+						"live.gain~[1]" : [ -18.851924704522204 ]
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u647011441"
+					"varname" : "u766009378"
 				}
 
 			}
@@ -7958,7 +7970,7 @@
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~[6]",
 							"parameter_mmax" : 6.0,
-							"parameter_shortname" : "live.gain~[4]",
+							"parameter_shortname" : "rev",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4
 						}
@@ -8144,7 +8156,7 @@
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~[4]",
 							"parameter_mmax" : 6.0,
-							"parameter_shortname" : "live.gain~[4]",
+							"parameter_shortname" : "master",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4
 						}
@@ -10288,8 +10300,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-46", 0 ],
+					"destination" : [ "obj-13", 0 ],
 					"source" : [ "obj-54", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-277", 0 ],
+					"source" : [ "obj-55", 0 ]
 				}
 
 			}
@@ -10451,10 +10470,10 @@
 			"obj-28::obj-147" : [ "live.text[37]", "live.text[1]", 0 ],
 			"obj-1::obj-149" : [ "live.text[12]", "live.text[1]", 0 ],
 			"obj-182::obj-123" : [ "live.text[174]", "live.text", 0 ],
-			"obj-217::obj-41" : [ "live.text[237]", "live.text[1]", 0 ],
 			"obj-217::obj-133" : [ "click[17]", "click", 0 ],
+			"obj-217::obj-41" : [ "live.text[237]", "live.text[1]", 0 ],
 			"obj-188::obj-131" : [ "grainL[14]", "grainL", 0 ],
-			"obj-46" : [ "live.gain~[6]", "live.gain~[4]", 0 ],
+			"obj-46" : [ "live.gain~[6]", "rev", 0 ],
 			"obj-23::obj-83" : [ "timestr[2]", "timestr", 0 ],
 			"obj-39::obj-14" : [ "live.numbox[3]", "live.numbox", 0 ],
 			"obj-179::obj-133" : [ "click[13]", "click", 0 ],
@@ -10478,11 +10497,11 @@
 			"obj-39::obj-131" : [ "grainL[3]", "grainL", 0 ],
 			"obj-1::obj-116" : [ "pitch", "pitch", 0 ],
 			"obj-217::obj-102" : [ "speed[17]", "speed", 0 ],
-			"obj-214::obj-125" : [ "live.tab[16]", "live.tab", 0 ],
 			"obj-214::obj-148" : [ "live.text[219]", "live.text[1]", 0 ],
+			"obj-214::obj-125" : [ "live.tab[16]", "live.tab", 0 ],
 			"obj-214::obj-54" : [ "live.text[224]", "live.text", 0 ],
-			"obj-188::obj-79" : [ "envLenght[28]", "TrigMetro", 0 ],
 			"obj-188::obj-41" : [ "live.text[196]", "live.text[1]", 0 ],
+			"obj-188::obj-79" : [ "envLenght[28]", "TrigMetro", 0 ],
 			"obj-28::obj-116" : [ "pitch[2]", "pitch", 0 ],
 			"obj-23::obj-41" : [ "live.text[18]", "live.text[1]", 0 ],
 			"obj-217::obj-79" : [ "envLenght[34]", "TrigMetro", 0 ],
@@ -10494,8 +10513,8 @@
 			"obj-185::obj-131" : [ "grainL[13]", "grainL", 0 ],
 			"obj-182::obj-149" : [ "live.text[176]", "live.text[1]", 0 ],
 			"obj-211::obj-133" : [ "click[15]", "click", 0 ],
-			"obj-188::obj-130" : [ "envLenght[27]", "envLenght", 0 ],
 			"obj-188::obj-149" : [ "live.text[201]", "live.text[1]", 0 ],
+			"obj-188::obj-130" : [ "envLenght[27]", "envLenght", 0 ],
 			"obj-66" : [ "Time[1]", "Time", 0 ],
 			"obj-23::obj-147" : [ "live.text[26]", "live.text[1]", 0 ],
 			"obj-185::obj-125" : [ "live.tab[13]", "live.tab", 0 ],
@@ -10503,8 +10522,8 @@
 			"obj-179::obj-130" : [ "envLenght[24]", "envLenght", 0 ],
 			"obj-39::obj-124" : [ "live.text[44]", "live.text", 0 ],
 			"obj-1::obj-143" : [ "live.text[10]", "live.text[1]", 0 ],
-			"obj-185::obj-116" : [ "pitch[13]", "pitch", 0 ],
 			"obj-185::obj-124" : [ "live.text[179]", "live.text", 0 ],
+			"obj-185::obj-116" : [ "pitch[13]", "pitch", 0 ],
 			"obj-156::obj-130" : [ "envLenght[19]", "envLenght", 0 ],
 			"obj-217::obj-83" : [ "timestr[17]", "timestr", 0 ],
 			"obj-211::obj-83" : [ "timestr[15]", "timestr", 0 ],
@@ -10512,8 +10531,8 @@
 			"obj-1::obj-125" : [ "live.tab", "live.tab", 0 ],
 			"obj-185::obj-54" : [ "live.text[184]", "live.text", 0 ],
 			"obj-217::obj-13" : [ "live.text[231]", "live.text", 0 ],
-			"obj-211::obj-155" : [ "live.drop[15]", "live.drop", 0 ],
 			"obj-211::obj-131" : [ "grainL[15]", "grainL", 0 ],
+			"obj-211::obj-155" : [ "live.drop[15]", "live.drop", 0 ],
 			"obj-39::obj-149" : [ "live.text[45]", "live.text[1]", 0 ],
 			"obj-179::obj-147" : [ "live.text[154]", "live.text[1]", 0 ],
 			"obj-217::obj-14" : [ "live.numbox[17]", "live.numbox", 0 ],
@@ -10526,8 +10545,8 @@
 			"obj-179::obj-159" : [ "Out[13]", "volume", 0 ],
 			"obj-156::obj-41" : [ "live.text[114]", "live.text[1]", 0 ],
 			"obj-214::obj-153" : [ "live.text[222]", "live.text[1]", 0 ],
-			"obj-211::obj-31" : [ "live.gain~[13]", "live.gain~", 0 ],
 			"obj-211::obj-130" : [ "envLenght[30]", "envLenght", 0 ],
+			"obj-211::obj-31" : [ "live.gain~[13]", "live.gain~", 0 ],
 			"obj-23::obj-130" : [ "envLenght[3]", "envLenght", 0 ],
 			"obj-39::obj-13" : [ "live.text[48]", "live.text", 0 ],
 			"obj-156::obj-136" : [ "live.text[147]", "live.text[1]", 0 ],
@@ -10551,8 +10570,8 @@
 			"obj-185::obj-79" : [ "envLenght[26]", "TrigMetro", 0 ],
 			"obj-182::obj-133" : [ "click[11]", "click", 0 ],
 			"obj-28::obj-131" : [ "grainL[2]", "grainL", 0 ],
-			"obj-217::obj-147" : [ "live.text[234]", "live.text[1]", 0 ],
 			"obj-217::obj-54" : [ "live.text[226]", "live.text", 0 ],
+			"obj-217::obj-147" : [ "live.text[234]", "live.text[1]", 0 ],
 			"obj-188::obj-155" : [ "live.drop[14]", "live.drop", 0 ],
 			"obj-23::obj-155" : [ "live.drop[1]", "live.drop", 0 ],
 			"obj-1::obj-14" : [ "live.numbox", "live.numbox", 0 ],
@@ -10568,11 +10587,11 @@
 			"obj-1::obj-159" : [ "Out[2]", "volume", 0 ],
 			"obj-182::obj-148" : [ "live.text[173]", "live.text[1]", 0 ],
 			"obj-188::obj-116" : [ "pitch[14]", "pitch", 0 ],
-			"obj-316" : [ "live.dial", "live.dial", 0 ],
 			"obj-292" : [ "Early[2]", "Early", 0 ],
+			"obj-316" : [ "live.dial", "live.dial", 0 ],
 			"obj-39::obj-130" : [ "envLenght[7]", "envLenght", 0 ],
-			"obj-1::obj-130" : [ "envLenght", "envLenght", 0 ],
 			"obj-1::obj-136" : [ "live.text[4]", "live.text[1]", 0 ],
+			"obj-1::obj-130" : [ "envLenght", "envLenght", 0 ],
 			"obj-185::obj-31" : [ "live.gain~[12]", "live.gain~", 0 ],
 			"obj-179::obj-13" : [ "live.text[157]", "live.text", 0 ],
 			"obj-156::obj-102" : [ "speed[10]", "speed", 0 ],
@@ -10581,7 +10600,7 @@
 			"obj-211::obj-136" : [ "live.text[205]", "live.text[1]", 0 ],
 			"obj-188::obj-147" : [ "live.text[198]", "live.text[1]", 0 ],
 			"obj-188::obj-14" : [ "live.numbox[14]", "live.numbox", 0 ],
-			"obj-13" : [ "live.gain~[4]", "live.gain~[4]", 0 ],
+			"obj-13" : [ "live.gain~[4]", "master", 0 ],
 			"obj-295" : [ "Regen[2]", "Regen", 0 ],
 			"obj-23::obj-54" : [ "live.text[21]", "live.text", 0 ],
 			"obj-39::obj-102" : [ "speed[3]", "speed", 0 ],
@@ -10626,19 +10645,19 @@
 			"obj-23::obj-125" : [ "live.tab[1]", "live.tab", 0 ],
 			"obj-156::obj-83" : [ "timestr[10]", "timestr", 0 ],
 			"obj-217::obj-136" : [ "live.text[230]", "live.text[1]", 0 ],
-			"obj-214::obj-123" : [ "live.text[216]", "live.text", 0 ],
 			"obj-214::obj-155" : [ "live.drop[16]", "live.drop", 0 ],
+			"obj-214::obj-123" : [ "live.text[216]", "live.text", 0 ],
 			"obj-211::obj-149" : [ "live.text[212]", "live.text[1]", 0 ],
 			"obj-39::obj-31" : [ "live.gain~[10]", "live.gain~", 0 ],
 			"obj-185::obj-83" : [ "timestr[14]", "timestr", 0 ],
-			"obj-182::obj-41" : [ "live.text[169]", "live.text[1]", 0 ],
 			"obj-182::obj-54" : [ "live.text[171]", "live.text", 0 ],
+			"obj-182::obj-41" : [ "live.text[169]", "live.text[1]", 0 ],
 			"obj-211::obj-54" : [ "live.text[208]", "live.text", 0 ],
 			"obj-188::obj-125" : [ "live.tab[14]", "live.tab", 0 ],
 			"obj-28::obj-133" : [ "click[5]", "click", 0 ],
 			"obj-156::obj-79" : [ "envLenght[20]", "TrigMetro", 0 ],
-			"obj-214::obj-41" : [ "live.text[217]", "live.text[1]", 0 ],
 			"obj-214::obj-83" : [ "timestr[16]", "timestr", 0 ],
+			"obj-214::obj-41" : [ "live.text[217]", "live.text[1]", 0 ],
 			"obj-188::obj-143" : [ "live.text[193]", "live.text[1]", 0 ],
 			"obj-23::obj-143" : [ "live.text[22]", "live.text[1]", 0 ],
 			"obj-39::obj-148" : [ "live.text[50]", "live.text[1]", 0 ],
@@ -10687,8 +10706,8 @@
 			"obj-1::obj-131" : [ "grainL", "grainL", 0 ],
 			"obj-182::obj-130" : [ "envLenght[25]", "envLenght", 0 ],
 			"obj-182::obj-147" : [ "live.text[170]", "live.text[1]", 0 ],
-			"obj-217::obj-122" : [ "live.text[228]", "live.text", 0 ],
 			"obj-217::obj-116" : [ "pitch[17]", "pitch", 0 ],
+			"obj-217::obj-122" : [ "live.text[228]", "live.text", 0 ],
 			"obj-188::obj-153" : [ "live.text[199]", "live.text[1]", 0 ],
 			"obj-211::obj-123" : [ "live.text[204]", "live.text", 0 ],
 			"obj-188::obj-83" : [ "timestr[12]", "timestr", 0 ],
@@ -10705,8 +10724,8 @@
 			"obj-185::obj-149" : [ "live.text[185]", "live.text[1]", 0 ],
 			"obj-185::obj-136" : [ "live.text[178]", "live.text[1]", 0 ],
 			"obj-182::obj-131" : [ "grainL[12]", "grainL", 0 ],
-			"obj-179::obj-54" : [ "live.text[159]", "live.text", 0 ],
 			"obj-179::obj-14" : [ "live.numbox[11]", "live.numbox", 0 ],
+			"obj-179::obj-54" : [ "live.text[159]", "live.text", 0 ],
 			"obj-211::obj-124" : [ "live.text[213]", "live.text", 0 ],
 			"obj-188::obj-159" : [ "Out[14]", "volume", 0 ],
 			"obj-277" : [ "Regen[1]", "Regen", 0 ],
@@ -10726,8 +10745,8 @@
 			"obj-294" : [ "Damp[2]", "Damp", 0 ],
 			"obj-23::obj-153" : [ "live.text[24]", "live.text[1]", 0 ],
 			"obj-39::obj-79" : [ "envLenght[6]", "TrigMetro", 0 ],
-			"obj-1::obj-155" : [ "live.drop", "live.drop", 0 ],
 			"obj-1::obj-124" : [ "live.text[17]", "live.text", 0 ],
+			"obj-1::obj-155" : [ "live.drop", "live.drop", 0 ],
 			"obj-182::obj-136" : [ "live.text[167]", "live.text[1]", 0 ],
 			"obj-156::obj-131" : [ "grainL[10]", "grainL", 0 ],
 			"obj-156::obj-13" : [ "live.text[148]", "live.text", 0 ],
@@ -10739,8 +10758,8 @@
 			"obj-280" : [ "Size[1]", "Size", 0 ],
 			"obj-23::obj-122" : [ "live.text[23]", "live.text", 0 ],
 			"obj-179::obj-136" : [ "live.text[163]", "live.text[1]", 0 ],
-			"obj-156::obj-123" : [ "live.text[76]", "live.text", 0 ],
 			"obj-156::obj-125" : [ "live.tab[10]", "live.tab", 0 ],
+			"obj-156::obj-123" : [ "live.text[76]", "live.text", 0 ],
 			"obj-211::obj-143" : [ "live.text[210]", "live.text[1]", 0 ],
 			"obj-276" : [ "bypass[1]", "bypass", 0 ],
 			"parameterbanks" : 			{
@@ -10812,12 +10831,12 @@
 					"parameter_longname" : "live.text[174]"
 				}
 ,
-				"obj-217::obj-41" : 				{
-					"parameter_longname" : "live.text[237]"
-				}
-,
 				"obj-217::obj-133" : 				{
 					"parameter_longname" : "click[17]"
+				}
+,
+				"obj-217::obj-41" : 				{
+					"parameter_longname" : "live.text[237]"
 				}
 ,
 				"obj-188::obj-131" : 				{
@@ -10908,24 +10927,24 @@
 					"parameter_longname" : "speed[17]"
 				}
 ,
-				"obj-214::obj-125" : 				{
-					"parameter_longname" : "live.tab[16]"
-				}
-,
 				"obj-214::obj-148" : 				{
 					"parameter_longname" : "live.text[219]"
+				}
+,
+				"obj-214::obj-125" : 				{
+					"parameter_longname" : "live.tab[16]"
 				}
 ,
 				"obj-214::obj-54" : 				{
 					"parameter_longname" : "live.text[224]"
 				}
 ,
-				"obj-188::obj-79" : 				{
-					"parameter_longname" : "envLenght[28]"
-				}
-,
 				"obj-188::obj-41" : 				{
 					"parameter_longname" : "live.text[196]"
+				}
+,
+				"obj-188::obj-79" : 				{
+					"parameter_longname" : "envLenght[28]"
 				}
 ,
 				"obj-28::obj-116" : 				{
@@ -10972,12 +10991,12 @@
 					"parameter_longname" : "click[15]"
 				}
 ,
-				"obj-188::obj-130" : 				{
-					"parameter_longname" : "envLenght[27]"
-				}
-,
 				"obj-188::obj-149" : 				{
 					"parameter_longname" : "live.text[201]"
+				}
+,
+				"obj-188::obj-130" : 				{
+					"parameter_longname" : "envLenght[27]"
 				}
 ,
 				"obj-23::obj-147" : 				{
@@ -11004,12 +11023,12 @@
 					"parameter_longname" : "live.text[10]"
 				}
 ,
-				"obj-185::obj-116" : 				{
-					"parameter_longname" : "pitch[13]"
-				}
-,
 				"obj-185::obj-124" : 				{
 					"parameter_longname" : "live.text[179]"
+				}
+,
+				"obj-185::obj-116" : 				{
+					"parameter_longname" : "pitch[13]"
 				}
 ,
 				"obj-156::obj-130" : 				{
@@ -11040,12 +11059,12 @@
 					"parameter_longname" : "live.text[231]"
 				}
 ,
-				"obj-211::obj-155" : 				{
-					"parameter_longname" : "live.drop[15]"
-				}
-,
 				"obj-211::obj-131" : 				{
 					"parameter_longname" : "grainL[15]"
+				}
+,
+				"obj-211::obj-155" : 				{
+					"parameter_longname" : "live.drop[15]"
 				}
 ,
 				"obj-39::obj-149" : 				{
@@ -11096,12 +11115,12 @@
 					"parameter_longname" : "live.text[222]"
 				}
 ,
-				"obj-211::obj-31" : 				{
-					"parameter_longname" : "live.gain~[13]"
-				}
-,
 				"obj-211::obj-130" : 				{
 					"parameter_longname" : "envLenght[30]"
+				}
+,
+				"obj-211::obj-31" : 				{
+					"parameter_longname" : "live.gain~[13]"
 				}
 ,
 				"obj-23::obj-130" : 				{
@@ -11188,12 +11207,12 @@
 					"parameter_longname" : "grainL[2]"
 				}
 ,
-				"obj-217::obj-147" : 				{
-					"parameter_longname" : "live.text[234]"
-				}
-,
 				"obj-217::obj-54" : 				{
 					"parameter_longname" : "live.text[226]"
+				}
+,
+				"obj-217::obj-147" : 				{
+					"parameter_longname" : "live.text[234]"
 				}
 ,
 				"obj-188::obj-155" : 				{
@@ -11456,12 +11475,12 @@
 					"parameter_longname" : "live.text[230]"
 				}
 ,
-				"obj-214::obj-123" : 				{
-					"parameter_longname" : "live.text[216]"
-				}
-,
 				"obj-214::obj-155" : 				{
 					"parameter_longname" : "live.drop[16]"
+				}
+,
+				"obj-214::obj-123" : 				{
+					"parameter_longname" : "live.text[216]"
 				}
 ,
 				"obj-211::obj-149" : 				{
@@ -11476,12 +11495,12 @@
 					"parameter_longname" : "timestr[14]"
 				}
 ,
-				"obj-182::obj-41" : 				{
-					"parameter_longname" : "live.text[169]"
-				}
-,
 				"obj-182::obj-54" : 				{
 					"parameter_longname" : "live.text[171]"
+				}
+,
+				"obj-182::obj-41" : 				{
+					"parameter_longname" : "live.text[169]"
 				}
 ,
 				"obj-211::obj-54" : 				{
@@ -11500,12 +11519,12 @@
 					"parameter_longname" : "envLenght[20]"
 				}
 ,
-				"obj-214::obj-41" : 				{
-					"parameter_longname" : "live.text[217]"
-				}
-,
 				"obj-214::obj-83" : 				{
 					"parameter_longname" : "timestr[16]"
+				}
+,
+				"obj-214::obj-41" : 				{
+					"parameter_longname" : "live.text[217]"
 				}
 ,
 				"obj-188::obj-143" : 				{
@@ -11684,12 +11703,12 @@
 					"parameter_longname" : "live.text[170]"
 				}
 ,
-				"obj-217::obj-122" : 				{
-					"parameter_longname" : "live.text[228]"
-				}
-,
 				"obj-217::obj-116" : 				{
 					"parameter_longname" : "pitch[17]"
+				}
+,
+				"obj-217::obj-122" : 				{
+					"parameter_longname" : "live.text[228]"
 				}
 ,
 				"obj-188::obj-153" : 				{
@@ -11744,12 +11763,12 @@
 					"parameter_longname" : "grainL[12]"
 				}
 ,
-				"obj-179::obj-54" : 				{
-					"parameter_longname" : "live.text[159]"
-				}
-,
 				"obj-179::obj-14" : 				{
 					"parameter_longname" : "live.numbox[11]"
+				}
+,
+				"obj-179::obj-54" : 				{
+					"parameter_longname" : "live.text[159]"
 				}
 ,
 				"obj-211::obj-124" : 				{
@@ -11820,12 +11839,12 @@
 					"parameter_longname" : "envLenght[6]"
 				}
 ,
-				"obj-1::obj-155" : 				{
-					"parameter_longname" : "live.drop"
-				}
-,
 				"obj-1::obj-124" : 				{
 					"parameter_longname" : "live.text[17]"
+				}
+,
+				"obj-1::obj-155" : 				{
+					"parameter_longname" : "live.drop"
 				}
 ,
 				"obj-182::obj-136" : 				{
@@ -11864,12 +11883,12 @@
 					"parameter_longname" : "live.text[163]"
 				}
 ,
-				"obj-156::obj-123" : 				{
-					"parameter_longname" : "live.text[76]"
-				}
-,
 				"obj-156::obj-125" : 				{
 					"parameter_longname" : "live.tab[10]"
+				}
+,
+				"obj-156::obj-123" : 				{
+					"parameter_longname" : "live.text[76]"
 				}
 ,
 				"obj-211::obj-143" : 				{

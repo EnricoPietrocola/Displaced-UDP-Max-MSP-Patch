@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-171",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 252.0, 1933.0, 81.0, 22.0 ],
+					"text" : "loadmess -18"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-185",
 					"maxclass" : "number",
 					"numinlets" : 1,
@@ -3311,7 +3323,7 @@
 						"basictuning" : 440,
 						"followglobaltempo" : 0,
 						"formantcorrection" : 0,
-						"loopend" : [ 2.0, "ms" ],
+						"loopend" : [ 25581.0, "ms" ],
 						"loopstart" : [ 0.0, "ms" ],
 						"mode" : "efficient",
 						"originallength" : [ 2533.982938612934049, "ticks" ],
@@ -4108,6 +4120,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-116", 0 ],
 					"source" : [ "obj-170", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-159", 0 ],
+					"source" : [ "obj-171", 0 ]
 				}
 
 			}
