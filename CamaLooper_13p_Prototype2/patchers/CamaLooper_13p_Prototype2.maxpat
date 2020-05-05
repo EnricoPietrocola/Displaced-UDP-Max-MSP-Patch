@@ -8130,46 +8130,6 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-278",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 1272.789627258926657, 4063.028903617157084, 59.5, 22.0 ],
-					"restore" : 					{
-						"Damp" : [ 0.503149628639221 ],
-						"Damp[1]" : [ 0.503149606299213 ],
-						"Dry" : [ 0.685039341449738 ],
-						"Dry[1]" : [ 0.685039370078741 ],
-						"Early" : [ 0.25 ],
-						"Early[1]" : [ 0.25 ],
-						"Regen" : [ 0.940944910049438 ],
-						"Regen[1]" : [ 0.940944881889762 ],
-						"Size" : [ 36.0 ],
-						"Size[1]" : [ 62.649668299336916 ],
-						"Spread" : [ 23.0 ],
-						"Spread[1]" : [ 23.0 ],
-						"Tail" : [ 1.0 ],
-						"Tail[1]" : [ 0.25 ],
-						"Time" : [ 11.0 ],
-						"Time[1]" : [ 11.0 ],
-						"bypass" : [ 0.0 ],
-						"live.dial" : [ 0.0 ],
-						"live.drop" : [ "C:/Users/Enrico/Desktop/Suoni/ComeOut.wav" ],
-						"live.gain~" : [ -18.0 ],
-						"live.gain~[1]" : [ -70.0 ],
-						"live.gain~[2]" : [ -6.246380596523217 ]
-					}
-,
-					"text" : "autopattr",
-					"varname" : "u380012229"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Ableton Sans Bold Regular",
 					"fontsize" : 9.0,
 					"id" : "obj-279",
@@ -10496,13 +10456,6 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-125", 1 ],
-					"source" : [ "obj-1", 3 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-384", 0 ],
 					"order" : 1,
 					"source" : [ "obj-1", 2 ]
@@ -11165,13 +11118,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-323", 1 ],
-					"source" : [ "obj-156", 3 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-385", 0 ],
 					"order" : 1,
 					"source" : [ "obj-156", 2 ]
@@ -11309,13 +11255,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-329", 1 ],
-					"source" : [ "obj-179", 3 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-398", 0 ],
 					"order" : 1,
 					"source" : [ "obj-179", 2 ]
@@ -11362,13 +11301,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-327", 1 ],
-					"source" : [ "obj-182", 3 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-396", 0 ],
 					"order" : 1,
 					"source" : [ "obj-182", 2 ]
@@ -11399,13 +11331,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-325", 1 ],
-					"source" : [ "obj-185", 3 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-394", 0 ],
 					"order" : 1,
 					"source" : [ "obj-185", 2 ]
@@ -11431,13 +11356,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-219", 0 ],
 					"source" : [ "obj-188", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-331", 1 ],
-					"source" : [ "obj-188", 3 ]
 				}
 
 			}
@@ -11599,13 +11517,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-337", 1 ],
-					"source" : [ "obj-211", 3 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-404", 0 ],
 					"order" : 1,
 					"source" : [ "obj-211", 2 ]
@@ -11636,13 +11547,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-335", 1 ],
-					"source" : [ "obj-214", 3 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-403", 0 ],
 					"order" : 1,
 					"source" : [ "obj-214", 2 ]
@@ -11668,13 +11572,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-216", 0 ],
 					"source" : [ "obj-217", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-333", 1 ],
-					"source" : [ "obj-217", 3 ]
 				}
 
 			}
@@ -11774,13 +11671,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
 					"source" : [ "obj-23", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-313", 1 ],
-					"source" : [ "obj-23", 3 ]
 				}
 
 			}
@@ -12233,13 +12123,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-27", 0 ],
 					"source" : [ "obj-28", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-319", 1 ],
-					"source" : [ "obj-28", 3 ]
 				}
 
 			}
@@ -13187,13 +13070,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-29", 0 ],
 					"source" : [ "obj-39", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-321", 1 ],
-					"source" : [ "obj-39", 3 ]
 				}
 
 			}
