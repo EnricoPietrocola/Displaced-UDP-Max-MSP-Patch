@@ -2,7 +2,7 @@
 	"name" : "CamaLooper_13p_Prototype2",
 	"version" : 1,
 	"creationdate" : 3670847598,
-	"modificationdate" : 3670938985,
+	"modificationdate" : 3671612601,
 	"viewrect" : [ 51.0, 99.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -14,6 +14,11 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"toplevel" : 1
+			}
+,
+			"syncedTime.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
 			}
 
 		}
