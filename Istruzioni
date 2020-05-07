@@ -1,0 +1,21 @@
+Istruzioni
+
+* Aprire la patch
+* Clickare sul selettore corrispondente al proprio nome
+* Drag 'n drop sample sulla patch
+* Attivare variation (Toggle in alto a sinistra)
+* Selezionare una porzione di campione dal proprio Looper
+* Impostare speed sul proprio looper a 1 quando il primo ciclo di loop del looper precedente finisce
+
+
+Risoluzione problemi
+
+Se non vengono ricevuti controlli da remoto: 
+  * attivare il toggle Recv Log
+  * controllare max console
+  * se la max console non riporta nessun messaggio, controllare che ZeroTier sia connesso sulla rete corretta
+  * se ZeroTier è connesso ma non funziona, aprire task manager (o gestione attività su MacOS) e fare uscita forzata su tutti i processi di ZeroTier
+  
+Se max arriva al 100% in utilizzo CPU:
+ * Su alcuni processori l'attivazione del timestretch per tutte le istanze del looper potrebbe essere troppo impegnativo in termini di utilizzo CPU.
+ 
