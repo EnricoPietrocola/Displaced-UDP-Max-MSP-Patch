@@ -20,9 +20,14 @@ Istruzioni
 * Clickare sul selettore corrispondente al proprio nome
 * Drag 'n drop sample sulla patch
 * Attivare variation (Toggle in alto a sinistra)
+* Selezionare tempo riduzione
 * Selezionare una porzione di campione dal proprio Looper
 * Impostare speed sul proprio looper a 1 quando il primo ciclo di loop del looper precedente finisce
 
+
+Per la performance
+
+  * Durante una performance live disabilitare il microfono su Zoom
 
 Risoluzione problemi
 
