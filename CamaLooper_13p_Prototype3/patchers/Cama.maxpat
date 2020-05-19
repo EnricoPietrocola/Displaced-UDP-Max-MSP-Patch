@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 1852.0, 929.0 ],
+		"rect" : [ 26.0, 85.0, 1852.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,18 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-87",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 72.0, 1329.0, 29.5, 22.0 ],
+					"text" : "0"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-45",
 					"maxclass" : "button",
@@ -6791,21 +6803,36 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-87", 0 ],
+					"order" : 3,
+					"source" : [ "obj-229", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-45", 0 ],
 					"source" : [ "obj-82", 0 ]
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-115", 0 ],
+					"source" : [ "obj-87", 0 ]
+				}
+
+			}
  ],
 		"parameters" : 		{
-			"obj-79" : [ "envLenght[1]", "TrigMetro", 0 ],
 			"obj-131" : [ "grainL", "grainL", 0 ],
+			"obj-79" : [ "envLenght[1]", "TrigMetro", 0 ],
 			"obj-125" : [ "live.tab[1]", "live.tab", 0 ],
-			"obj-124" : [ "live.text[28]", "live.text", 0 ],
 			"obj-149" : [ "live.text[27]", "live.text[1]", 0 ],
+			"obj-124" : [ "live.text[28]", "live.text", 0 ],
 			"obj-54" : [ "live.text[21]", "live.text", 0 ],
-			"obj-41" : [ "live.text[18]", "live.text[1]", 0 ],
 			"obj-102" : [ "speed", "speed", 0 ],
+			"obj-41" : [ "live.text[18]", "live.text[1]", 0 ],
 			"obj-201" : [ "live.dial[13]", "live.dial", 0 ],
 			"obj-83" : [ "timestr[2]", "timestr", 0 ],
 			"obj-31" : [ "live.gain~[5]", "live.gain~", 0 ],
